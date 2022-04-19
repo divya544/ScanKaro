@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>New or Edit Order</title>
+</head>
+<body>
+	<form th:object="${newCustomerOrder}"
+	 th:action="@{/addCustomerOrder/{id}(id=${newCustomerOrder.id})}" method="post">
+		Date: <input name="firstName" size="30" th:field="*{id}"><br />
+		Customer: <input name="lastName" size="30" th:field="*{date}"><br />
+		Menu Item: <input name="phone" size="30" th:field="*{menuItem}"><br />
+		
+		<input name="submit" type="submit" value="submit" />
+	</form>
+
+</body>
+</html>
