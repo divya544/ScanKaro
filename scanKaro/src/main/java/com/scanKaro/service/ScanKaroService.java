@@ -53,7 +53,7 @@ public class ScanKaroService {
         }
     }
 
-    public void updateItem(String foodName){
+    public void dumpBody(){
 
         }
 
